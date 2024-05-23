@@ -6,6 +6,8 @@
   "type": "module",
   "scripts": {
     "build-n-run": "copyfiles -u 1 -e **/scss/* src/**/*.{html,css,ttf,txt,mp3,png,svg} dist && tsc && sass src/client/scss:dist/client/css && node dist/app.js",
+    "tsc": "tsc",
+    "tsc-n-run": "tsc && node dist/app.js",
     "start": "node dist/app.js",
     "copy": "copyfiles -u 1 -e **/scss/* src/**/*.{html,css,ttf,txt,mp3,png,svg} dist",
     "build": "copyfiles -u 1 src/**/*.{html,css,ttf,txt,mp3,png} dist && tsc",
